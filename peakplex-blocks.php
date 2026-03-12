@@ -10,17 +10,18 @@ if (!defined('ABSPATH')) {
     exit;
 }
 
-require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
-
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
+require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+
+// Build the update checker
 $updateChecker = PucFactory::buildUpdateChecker(
     'https://github.com/Peakplex/peakplex-blocks/',
     __FILE__,
     'peakplex-blocks'
 );
 
-// If your repo is private, authenticate with a GitHub Personal Access Token
+// Only for private repo
 $updateChecker->setAuthentication('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');
 
 $updateChecker->setBranch('main');
