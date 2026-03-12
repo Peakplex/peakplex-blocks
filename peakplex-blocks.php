@@ -5,6 +5,7 @@
  * Version: 1.0.2
  * Author: Peakplex Internet
  * Author URI: https://peakplex.com
+ * Icon: icon-256x256.png
  */
 
 if (!defined('ABSPATH')) {
