@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Require the plugin update checker library first
-require __DIR__ . '/plugin-update-checker/plugin-update-checker.php';
+require __DIR__ . '/plugin-update-checker-master/plugin-update-checker.php';
 
 // Build the update checker using fully-qualified class name
 $updateChecker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
