@@ -2,8 +2,9 @@
 /**
  * Plugin Name: Peakplex Blocks
  * Description: Reusable blocks used across my websites.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Peakplex Internet
+ * Author URI: https://peakplex.com
  */
 
 if (!defined('ABSPATH')) {
