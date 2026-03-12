@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Peakplex Blocks
  * Description: Reusable blocks used across my websites.
- * Version: 1.0.1
+ * Version: 1.0.0
  * Author: Peakplex Internet
  */
 
@@ -19,5 +19,8 @@ $updateChecker = PucFactory::buildUpdateChecker(
     __FILE__,
     'peakplex-blocks'
 );
+
+// If your repo is private, authenticate with a GitHub Personal Access Token
+$updateChecker->setAuthentication('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');
 
 $updateChecker->setBranch('main');
