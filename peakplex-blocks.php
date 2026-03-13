@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Peakplex Blocks
  * Description: Reusable blocks used across my websites.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Peakplex Internet
  * Author URI: https://peakplex.com
  * Icon: icon-128x128.png
