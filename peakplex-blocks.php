@@ -22,8 +22,5 @@ $updateChecker = \YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChec
     'peakplex-blocks'
 );
 
-// Only for private repo
-$updateChecker->setAuthentication('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');
-
 // Check the main branch for updates
 $updateChecker->setBranch('main');
