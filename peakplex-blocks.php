@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Peakplex Blocks
  * Description: Reusable blocks used across my websites.
- * Version: 1.1.3
+ * Version: 1.1.4
  * Author: Peakplex Internet
  * Author URI: https://peakplex.com
  * Icon: icon-128x128.png
@@ -19,12 +19,13 @@ use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 // ------------------------------
 // 1. Build the update checker for GitHub public repo
 // ------------------------------
-// Build update checker using ZIP archive
 $updateChecker = PucFactory::buildUpdateChecker(
-    'https://github.com/Peakplex/peakplex-blocks/releases/latest/download/peakplex-blocks.zip',
+    'https://github.com/Peakplex/peakplex-blocks', // public GitHub repo URL
     __FILE__,
     'peakplex-blocks'
 );
+
+$updateChecker->setBranch('main'); // track main branch or master
 
 // ------------------------------
 // 2. Force fast update checks for testing / immediate detection
