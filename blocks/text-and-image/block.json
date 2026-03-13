@@ -1,0 +1,12 @@
+{
+  "name": "text-and-image",
+  "title": "Text and Image",
+  "description": "Add a text and image",
+  "render_template": "template-parts/blocks/text-and-image.php",
+  "category": "media",
+  "icon": "align-pull-right",
+  "keywords": ["text", "and", "image", "media"],
+  "supports": {
+    "color": true
+  }
+}
